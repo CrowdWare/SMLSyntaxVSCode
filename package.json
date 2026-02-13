@@ -1,0 +1,57 @@
+{
+  "name": "nocode-sml-syntax",
+  "displayName": "NoCode SML Syntax",
+  "description": "Syntax highlighting for SML (Simple Markup Language) used by NoCodeGodot.",
+  "version": "0.0.4",
+  "publisher": "crowdware",
+  "icon": "icon.png",
+  "license": "GPL-3.0-or-later",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "sml",
+    "nocode",
+    "syntax",
+    "godot"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CrowdWare/NoCodeGodot.git"
+  },
+  "scripts": {
+    "package": "npx vsce package --no-dependencies",
+    "install-local": "npm run package && code --install-extension $(ls -t *.vsix | head -n 1) --force",
+    "publish:marketplace": "npx vsce publish --no-dependencies -p \"$VSCE_PAT\"",
+    "publish:openvsx": "npm run package && npx ovsx publish $(ls -t *.vsix | head -n 1) -p \"$OVSX_PAT\""
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.6.2",
+    "ovsx": "^0.10.4"
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "nocode-sml",
+        "aliases": [
+          "NoCode SML",
+          "Simple Markup Language"
+        ],
+        "extensions": [
+          ".sml"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "nocode-sml",
+        "scopeName": "source.nocode-sml",
+        "path": "./syntaxes/sml.tmLanguage.json"
+      }
+    ]
+  }
+}
