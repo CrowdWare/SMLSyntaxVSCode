@@ -96,8 +96,8 @@
     "numbers": {
       "patterns": [
         {
-          "name": "constant.numeric.integer.sml",
-          "match": "(?<![A-Za-z0-9_.-])-?\\b\\d+\\b"
+          "name": "constant.numeric.sml",
+          "match": "(?<![A-Za-z0-9_.-])-?(?:\\d+\\.\\d+|\\.\\d+|\\d+)\\b"
         }
       ]
     },

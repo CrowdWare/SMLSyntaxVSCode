@@ -2,7 +2,7 @@
   "name": "nocode-sml-syntax",
   "displayName": "NoCode SML Syntax",
   "description": "Syntax highlighting for SML (Simple Markup Language) used by NoCodeGodot.",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "publisher": "crowdware",
   "icon": "icon.png",
   "license": "GPL-3.0-or-later",

@@ -8,7 +8,7 @@ VSCode syntax extension for **SML (Simple Markup Language)** used by NoCodeGodot
 - Syntax highlighting for:
   - SML node names (`Window`, `Column`, `Panel`, ...)
   - property keys (`text:`, `layoutMode:`, ...)
-  - strings, escapes, booleans, integers
+  - strings, escapes, booleans, integers, floats
   - enum-like values used by runtime schema (e.g. `layout`, `fixed`, `document`, `open`, `saveAs`)
   - comments (`//`, `/* ... */`)
 
